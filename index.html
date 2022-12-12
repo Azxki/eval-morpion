@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Morpion</title>
+</head>
+<body>
+<div id="finDuJeu">
+  <p class="white" id="fin2">...</p>
+  <input type="submit" value="Recommencer" id="rechargement" onclick="reloadGame()">
+</div>
+
+<div class="tableau">
+  <div class="case" data-cell></div>
+  <div class="case" data-cell></div>
+  <div class="case" data-cell></div>
+  <div class="case" data-cell></div>
+  <div class="case" data-cell></div>
+  <div class="case" data-cell></div>
+  <div class="case" data-cell></div>
+  <div class="case" data-cell></div>
+  <div class="case" data-cell></div>
+</div>
+
+<h1 id="jeu">Le joueur 1 commence!</h1>
+<script src="app.js"></script>
+</body>
+</html>

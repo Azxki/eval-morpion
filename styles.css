@@ -1,0 +1,60 @@
+* {
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #72a8d9;
+}
+
+h1 { text-align: center }
+
+.case {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.case:nth-child(3n) { border-right: none }
+.case:nth-child(6) .cell { border-bottom: none }
+
+.tableau {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13rem;
+    padding-bottom: 7rem;
+    margin-left: 50rem;
+}
+
+.white {
+    color: white
+}
+
+#finDuJeu {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: black;
+}
+
+#finDuJeu p, #finDuJeu input {
+    position: fixed;
+    top: 45%; left: 45%;
+    transform: translate(-45%, -45%);
+    text-align: center;
+}
+
+#finDuJeu p {
+    margin-top: 2rem
+}
